@@ -383,4 +383,7 @@ body {
       display: flex;
       justify-content: flex-end;
    }
+   .footer .tm p {
+      font-size: .3rem;
+   }
 }
