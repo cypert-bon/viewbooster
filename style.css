@@ -222,7 +222,7 @@ body {
 .circles div.c2 {
    background-color: var(--yellow);
    top: 4rem;
-   right: -2rem;
+   right: 2rem;
 }
 .circles div.c3 {
    background-color: var(--red);
@@ -258,7 +258,8 @@ body {
    justify-content: space-between;
    align-items: center;
    color: #fff;
-   padding: 1.4rem 1.2rem 1rem .6rem;
+   font-size: .8rem;
+   padding: 1.4rem 1rem 1rem .6rem;
 }
 .faq-item p {
    padding: 0 .6rem 1rem;
@@ -353,29 +354,15 @@ body {
 }
 .footer .tm {
    width: 100%;
-   padding: 1rem .6rem;
+   padding: .6rem .8rem;
    display: flex;
    justify-content: center;
    align-items: center;
+   border-top: .45px solid #fff;
+   color: var(--light-blue);
+   font-size: .8rem;
 }
-.tm .cp {
-   width: 100%;
-   background: white;
-   height: .8px;
-   position: relative;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.tm .cp:before {
-   content: '10BYTES PLC \f1f9 2023';
-   position: relative;
-   font-family: fontAwesome;
-   padding: 0 .35rem;
-   background: var(--black);
-   letter-spacing: 1.5px;
-   color: rgba(30 177 247 / .7);
-}
+
 
 @media screen and (min-width: 760px){
    .header .logo {
