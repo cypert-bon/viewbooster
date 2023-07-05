@@ -5,11 +5,7 @@ const iframeCard = document.querySelector(".main .wrapper");
 
 
 
-    var frame = document.getElementById("myframe");
-    var fdoc = frame.contentDocument;
-
-    fdoc.getElementsByTagName("video")[0].playbackRate = 3; // or whatever
-</script>
+    
 
 let url;
 
@@ -38,11 +34,12 @@ const playVideo = () => {
    iframeCard.innerHTML = "";
    for (i = 0; i < numOfTabs.value; i++) {
       let iframeTag = `<iframe id="iframe" sandbox="allow-scripts" src="https:/\/www.youtube.com/embed/${url}"></iframe>`;
-      var fdoc = document.getElementById("iframe").contentDocument;
+           iframeCard.innerHTML += iframeTag;
+       var fdoc = document.getElementById("iframe").contentDocument;
 
     fdoc.getElementsByTagName("video")[0].playbackRate = 4; // or whatever
 
-      iframeCard.innerHTML += iframeTag;
+ 
       
   }
      
